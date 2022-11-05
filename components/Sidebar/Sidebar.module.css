@@ -1,0 +1,146 @@
+.chatMenu {
+  position: absolute;
+  z-index: -1;
+  width: 244px;
+  height: 844px;
+  left: 76px;
+  top: 0px;
+  background: var(--secondary-background-color);
+  overflow-y: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+}
+/* width */
+.chatMenu::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.chatMenu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.chatMenu::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 212px;
+  height: 328px;
+  left: 16px;
+  top: 40px;
+  list-style: none;
+}
+.chat li {
+  width: 215px;
+  height: 55px;
+  background: rgba(51, 51, 51, 0.5);
+  border-radius: 5px;
+
+  /* Inside auto layout */
+}
+.chat li:hover {
+  cursor: pointer;
+}
+
+.chatContain {
+  position: relative;
+  top: 8px;
+  left: 12px;
+  vertical-align: middle;
+}
+.chatContain img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  vertical-align: middle;
+  float: left;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.chatContain p {
+  width: 42px;
+  height: 18px;
+  margin-left: 10px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  display: inline-block;
+  /* identical to box height */
+
+  letter-spacing: 0.36px;
+
+  color: var(--white-color);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.header {
+  position: absolute;
+  width: 244px;
+  height: 7vh;
+  left: 0px;
+  top: 0px;
+
+  background: rgba(255, 255, 255, 0.001);
+}
+.headerText {
+  position: absolute;
+  left: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+
+  color: var(--white-color);
+}
+.search {
+  width: 215px;
+  height: 25vh;
+  background-color: var(--third-background-color);
+  color: var(--white-color);
+  border-radius: 5px;
+}
+.search input {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  color: var(--white-color);
+  line-height: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+/* ====== Media Queries ======= */
+@media screen and (max-width: 785px) {
+  .chat {
+    width: 100px;
+  }
+  .chat li {
+    width: 165px;
+  }
+  .chatMenu {
+    width: 200px;
+  }
+}

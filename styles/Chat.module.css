@@ -1,0 +1,164 @@
+/* The css file for the chat element */
+
+.body {
+  background-color: var(--third-background-color);
+  position: absolute;
+  left: 320px;
+  top: 0;
+  width: 56.3vw;
+  height: 100vh;
+}
+.header {
+  color: var(--white-color);
+
+  height: 12vh;
+
+  padding: 15px 40px;
+  border-bottom: 1px solid grey;
+}
+.header h1 {
+  line-height: 0;
+  font-size: 1.1rem;
+}
+.header p {
+  font-size: 0.8rem;
+  color: grey;
+}
+.chatList {
+  list-style: none;
+  color: var(--white-color);
+  height: 70vh;
+  overflow-y: scroll;
+  width: 99%;
+  overflow-x: hidden;
+}
+.chatList::-webkit-scrollbar {
+  width: 8px;
+}
+.chatList::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chatList::-webkit-scrollbar-thumb {
+  background: var(--background-color);
+  border-radius: 5px;
+}
+.chatList li {
+  padding: 8px 10px;
+  cursor: pointer;
+  width: 98%;
+}
+.profile {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.image {
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 5px;
+  max-width: 50vw;
+}
+.chatList li p {
+  display: inline;
+  margin-left: 8px;
+}
+.chatList li:hover {
+  background-color: #202021;
+  border-radius: 3px;
+}
+.bar {
+  width: 90%;
+  background-color: var(--background-color);
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  border-radius: 6px;
+  height: 6.5vh;
+}
+.bar img {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bar input {
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  color: white;
+  padding: 10px 10px;
+  width: 90%;
+  margin-left: 5px;
+  display: inline-block;
+}
+.emoji {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  display: none;
+}
+.uploadBox {
+  position: relative;
+  bottom: 222px;
+  width: 90%;
+  height: fit-content;
+  background-color: var(--background-color);
+  left: 40px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid grey;
+}
+.removeImage {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: var(--white-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.732);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-bottom: 3px;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  cursor: pointer;
+}
+.uploadImage {
+  border-radius: 5px;
+  height: 40vh;
+}
+/* ========== Media Queries ======= */
+@media screen and (max-width: 1212px) {
+  .bar {
+    width: 80%;
+  }
+  .bar input {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1112px) {
+  .body {
+    width: 60vw;
+  }
+  .bar input {
+    width: 80%;
+  }
+  .bar {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 785px) {
+  .body {
+    left: 280px;
+  }
+}

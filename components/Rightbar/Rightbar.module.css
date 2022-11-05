@@ -1,0 +1,38 @@
+.bar {
+  width: 240px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: var(--background-color);
+  text-align: center;
+  padding-top: 5vh;
+}
+.bar img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.bar h1 {
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+.bar p {
+  color: grey;
+  font-size: 0.9rem;
+}
+.bar a {
+  width: 85%;
+  vertical-align: middle;
+  height: 10vh;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  color: var(--white-color);
+  padding-top: 16px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1112px) {
+  .bar {
+    display: none;
+  }
+}
