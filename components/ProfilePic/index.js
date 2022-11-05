@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function ProfilePicture({ userkey, width, username }) {
   //Return the JSX
   return (
-    <Link href={`https:evasocial.app/profile/${username}`}> {/* Route to their profile */}
+    <Link href={`https:evasocial.app/profile/${username}`}> 
       <img
         style={{
           width: { width },
